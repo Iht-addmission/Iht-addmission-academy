@@ -36,3 +36,6 @@ export const deleteRecordedClass = async () => {};
 export const fetchTeachers = async () => [];
 export const createTeacher = async () => {};
 export const updateTeacher = async () => {};
+export const deleteTeacher = async () => {};
+export const fetchInstitutes = async () => [];
+export const addInstitute = async () => {};
