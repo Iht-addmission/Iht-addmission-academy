@@ -5,13 +5,13 @@ import { Building2, MapPin, CheckCircle2, LayoutGrid, Users, ArrowRight, ShieldC
 
 import { Institute, Course, DepartmentInfo } from '../types';
 
-import dhakaIhtImg from '../assets/images/regenerated_image_1777921032256.jpg';
-import rajshahiIhtImg from '../assets/images/regenerated_image_1777920175521.png';
-import boguraIhtImg from '../assets/images/regenerated_image_1777920177187.jpg';
-import chattogramIhtImg from '../assets/images/regenerated_image_1777920177962.jpg';
-import barishalIhtImg from '../assets/images/regenerated_image_1777920178644.jpg';
-import rangpurIhtImg from '../assets/images/regenerated_image_1777920179240.jpg';
-import jhenaidahIhtImg from '../assets/images/regenerated_image_1777920179830.jpg';
+import dhakaIhtImg from '../images/regenerated_image_1777921032256.jpg';
+import rajshahiIhtImg from '../images/regenerated_image_1777920175521.png';
+import boguraIhtImg from '../images/regenerated_image_1777920177187.jpg';
+import chattogramIhtImg from '../images/regenerated_image_1777920177962.jpg';
+import barishalIhtImg from '../images/regenerated_image_1777920178644.jpg';
+import rangpurIhtImg from '../images/regenerated_image_1777920179240.jpg';
+import jhenaidahIhtImg from '../images/regenerated_image_1777920179830.jpg';
 
 const INSTITUTE_IMAGES: Record<string, string> = {
   'ssmch-iht': 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200',
