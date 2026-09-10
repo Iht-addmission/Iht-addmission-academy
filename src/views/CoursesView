@@ -32,7 +32,8 @@ export default function CoursesView({ onNavigate }: CoursesViewProps) {
           >
             <Target size={14} /> Career Path Guidance
           </motion.div>
-          <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight uppercase">DMT & B.Sc span className="text-emerald-600">Specializations</span></h1>
+         <h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight uppercase">DMT &amp; B.Sc <span className="text-emerald-600">Admission Coaching</span></h1> 
+<h1 className="text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight uppercase">DMT & B.Sc span className="text-emerald-600">Specializations</span></h1>
           <p className="text-slate-500 italic max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
             We provide official descriptions of these departments to help you choose your career path after passing the IHT admission. 
             <span className="block mt-2 font-black text-slate-900 not-italic">Note: We provide admission coaching only, not DMT academic courses.</span>
