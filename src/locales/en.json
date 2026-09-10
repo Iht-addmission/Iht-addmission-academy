@@ -1,0 +1,159 @@
+{
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search Dhaka IHT, Rajshahi...",
+    "login": "Login",
+    "studentLogin": "Student Login",
+    "adminLogin": "Admin Login",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "language": "Language",
+    "home": "Home",
+    "institutes": "Institutes",
+    "courses": "Courses",
+    "admission": "Admission",
+    "notices": "Notices",
+    "calendar": "Calendar",
+    "query": "Resources",
+    "gpa": "GPA Calculator"
+  },
+  "hero": {
+    "badge": "National IHT Information Portal",
+    "titlePrefix": "Central ",
+    "titleSuffix": "Directory",
+    "titleSubtitle": "IHT Directory",
+    "titleBlue": "IHT",
+    "subtitle": "Your one-stop hub for exploring all Institutes of Health Technology in Bangladesh. Find departments, seats, and campus details instantly.",
+    "findCampus": "Find Campus",
+    "studentLogin": "Student Login",
+    "stats": {
+      "institutes": "Institutes",
+      "seats": "Annual Seats",
+      "verified": "DGHS Verified"
+    }
+  },
+  "quickActions": {
+    "campus": "Campus Directory",
+    "campusDesc": "Seat matrix of all IHTs.",
+    "portal": "Student Portal",
+    "portalDesc": "Secure login for students.",
+    "admission": "Admission Info",
+    "admissionDesc": "2026 application guide.",
+    "calculator": "GPA Calculator",
+    "calculatorDesc": "Eligibility checker.",
+    "calendar": "Academic Calendar",
+    "calendarDesc": "View official events.",
+    "fbResources": "FB Resources",
+    "fbResourcesDesc": "Social community groups.",
+    "results": "Result & Notices",
+    "resultsDesc": "Latest DGHS updates."
+  },
+  "featured": {
+    "title": "Featured",
+    "titleHighlight": "Campuses",
+    "subtitle": "Most searched government IHT institutes based on national popularity and seat capacity.",
+    "seeAll": "See All 24 Institutes",
+    "govtCampus": "Govt. Campus",
+    "explore": "Explore Details"
+  },
+  "excellence": {
+    "title": "Certified",
+    "titleHighlight": "Excellence",
+    "subtitle": "All institutes listed on this portal are officially recognized by the Directorate General of Health Services (DGHS) and the Ministry of Health & Family Welfare, Bangladesh.",
+    "smf": "SMF Standards",
+    "smfDesc": "Follows the official Technical Health Board curriculum.",
+    "clinical": "Clinical Placement",
+    "clinicalDesc": "Mandatory training in Govt. Medical College Hospitals.",
+    "faculty": "Faculty Quality",
+    "facultyDesc": "Instructors are experienced medical professionals.",
+    "job": "Job Market",
+    "jobDesc": "Graduates are eligible for class-2 govt. positions."
+  },
+  "cta": {
+    "badge": "Session 2026-27 Intake",
+    "title": "Begin Your",
+    "titleHighlight": "Medical Journey",
+    "apply": "Apply Online Now",
+    "browse": "Browse Campus List"
+  },
+  "footer": {
+    "about": "The central knowledge platform for Institute of Health Technology (IHT) across Bangladesh. Empowering students with accurate data and modern technical curriculum.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact Us",
+    "copyright": "© 2026 IHT Admission Academy. All Rights Reserved."
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "student": "Student",
+    "teacher": "Teacher",
+    "admin": "Administrator",
+    "tabs": {
+      "overview": "Overview",
+      "academic": "Academic Hall",
+      "applications": "Applications",
+      "users": "User Verification",
+      "courses": "Courses",
+      "teachers": "Teachers",
+      "institutes": "Institutes",
+      "assessments": "Assessments",
+      "notices": "Notices",
+      "about": "My Profile"
+    },
+    "actions": {
+      "addNew": "Add New",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "edit": "Edit"
+    }
+  },
+  "institutesView": {
+    "searchPlaceholder": "Search by institute name or location (e.g. Dhaka)...",
+    "filters": "Filters",
+    "sort": "Sort",
+    "seatsHigh": "Seats (High)",
+    "seatsLow": "Seats (Low)",
+    "advancedExplorer": "Advanced Explorer",
+    "location": "Location",
+    "department": "Department",
+    "seatRange": "Seat Range (Dept)",
+    "instituteSize": "Institute Size",
+    "applyFilters": "Apply Filters",
+    "totalSeats": "Total Seats",
+    "noInstitutes": "No institutes found",
+    "resetFilters": "Reset All Filters",
+    "adjustSearch": "Try adjusting your filters or search query."
+  },
+  "admissionView": {
+    "title": "DMT Online Admission",
+    "badge": "State Medical Faculty Intake",
+    "subtitle": "Unified application portal for all technical departments. Registration fee is non-refundable.",
+    "steps": {
+      "personal": "Personal Info",
+      "academic": "Academic Records",
+      "finalize": "Finalize & Pay"
+    },
+    "meritCalculator": "Merit Calculator",
+    "gpaToScore": "GPA to Score (Out of 100)",
+    "calculatedMerit": "Calculated Merit",
+    "officialRatio": "Official Ratio"
+  },
+  "officialAdmission": {
+    "title": "Apply for IHT & MATS Admission",
+    "subtitle": "Official DGME Teletalk Admission Portal",
+    "applyNow": "Apply Now",
+    "warning": "Always apply through the official DGME website",
+    "disclaimer": "This platform is not the official DGME website. It only provides guidance and quick access.",
+    "links": {
+      "admitCard": "Admit Card",
+      "result": "Result",
+      "circular": "Circular"
+    },
+    "updates": "Admission Updates",
+    "govtBadge": "Govt. Authorized Portal"
+  }
+}
