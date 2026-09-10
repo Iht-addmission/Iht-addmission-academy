@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { CheckCircle2, ChevronRight, CreditCard, User, Phone, BookOpen, Loader2, Activity, ArrowRight, ShieldCheck, GraduationCap, Target } from 'lucide-react';
 
 import { Course, User as UserType } from '../types';
-import { formatNumber, formatPrice } from '../lib/i18nUtils';
+
 
 function GpaCalculator() {
   const { t } = useTranslation();
