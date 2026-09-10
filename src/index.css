@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Vibrant Palette Colors - mapped to fallback variables */
+  --color-brand-blue: var(--color-brand-blue-val, #1d4ed8);
+  --color-brand-indigo: var(--color-brand-indigo-val, #4338ca);
+  --color-brand-orange: #f97316;
+  --color-bg-light: var(--color-bg-light-val, #f0f7ff);
+  
+  --medical-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231d4ed8' fill-opacity='var(--medical-opacity-val, 0.03)'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+}
+
+:root {
+  --color-bg-light-val: #f0f7ff;
+  --color-bg-card-val: #ffffff;
+  --color-text-main-val: #0f172a;
+  --color-text-muted-val: #475569;
+  --color-border-main-val: #e2e8f0;
+  --color-brand-blue-val: #1d4ed8;
+  --color-brand-indigo-val: #4338ca;
+  --medical-opacity-val: 0.03;
+  --shadow-opacity-val: 0.04;
+}
+
+html.dark {
+  --color-bg-light-val: #0f172a; /* Slate 900 */
+  --color-bg-card-val: #1e293b;  /* Slate 800 */
+  --color-text-main-val: #f8fafc; /* Slate 50 */
+  --color-text-muted-val: #94a3b8; /* Slate 400 */
+  --color-border-main-val: #334155; /* Slate 700 */
+  --color-brand-blue-val: #3b82f6; /* Lighter blue for dark contrast */
+  --color-brand-indigo-val: #6366f1;
+  --medical-opacity-val: 0.015;
+  --shadow-opacity-val: 0.2;
+}
+
+html[data-theme="navy"] {
+  --color-bg-light-val: #030712; /* Deep space dark */
+  --color-bg-card-val: #0b1528;  /* Midnight navy */
+  --color-text-main-val: #e0f2fe; /* Soft ocean blue-white */
+  --color-text-muted-val: #7dd3fc; /* Soft blue sky */
+  --color-border-main-val: #1e293b;
+  --color-brand-blue-val: #0ea5e9;
+  --color-brand-indigo-val: #818cf8;
+  --medical-opacity-val: 0.01;
+  --shadow-opacity-val: 0.3;
+}
+
+html[data-theme="warm"] {
+  --color-bg-light-val: #fbf0d9; /* Eye-friendly warm study cream */
+  --color-bg-card-val: #f4e3c1;   /* Warm study card */
+  --color-text-main-val: #3c301e; /* Deep amber charcoal */
+  --color-text-muted-val: #7c5f35; /* Soft brown amber */
+  --color-border-main-val: #e6cea3;
+  --color-brand-blue-val: #b58900; /* Warm solar gold */
+  --color-brand-indigo-val: #bd5c00;
+  --medical-opacity-val: 0.04;
+  --shadow-opacity-val: 0.05;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-light)] text-slate-800 antialiased;
+    background-image: var(--medical-pattern);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Helper Class overrides to apply the dark theme globally and safely inside complex components */
+html.dark .bg-white, 
+html[data-theme="warm"] .bg-white {
+  background-color: var(--color-bg-card-val) !important;
+  color: var(--color-text-main-val) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .bg-slate-50, 
+html[data-theme="warm"] .bg-slate-50 {
+  background-color: var(--color-bg-light-val) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark .text-slate-900, 
+html.dark .text-slate-800, 
+html.dark .text-slate-700,
+html[data-theme="warm"] .text-slate-900, 
+html[data-theme="warm"] .text-slate-800, 
+html[data-theme="warm"] .text-slate-700 {
+  color: var(--color-text-main-val) !important;
+  transition: color 0.3s ease;
+}
+
+html.dark .text-slate-600, 
+html.dark .text-slate-500, 
+html.dark .text-slate-400,
+html[data-theme="warm"] .text-slate-600, 
+html[data-theme="warm"] .text-slate-500, 
+html[data-theme="warm"] .text-slate-400 {
+  color: var(--color-text-muted-val) !important;
+  transition: color 0.3s ease;
+}
+
+html.dark .border-slate-100, 
+html.dark .border-slate-200,
+html[data-theme="warm"] .border-slate-100, 
+html[data-theme="warm"] .border-slate-200 {
+  border-color: var(--color-border-main-val) !important;
+  transition: border-color 0.3s ease;
+}
+
+/* Force dark class compatibility across common headers/panels */
+html.dark .bg-blue-50, html[data-theme="navy"] .bg-blue-50 {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+html.dark .text-blue-900, html[data-theme="navy"] .text-blue-900 {
+  color: #93c5fd !important;
+}
