@@ -17,3 +17,6 @@ export const storage = getStorage(app);
 export const fetchNotices = async () => {
   return [];
 };
+export const fetchExams = async () => {
+    return [];
+};
