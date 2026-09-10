@@ -41,3 +41,4 @@ export const updateTeacher = async () => {};
 export const deleteTeacher = async () => {};
 export const fetchInstitutes = async () => [];
 export const addInstitute = async () => {};
+export const fetchAbout = async () => null;
