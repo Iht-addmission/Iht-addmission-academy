@@ -116,7 +116,7 @@ import {
   fetchRecordedClasses,
   createRecordedClass,
   deleteRecordedClass,
-} from "../api";
+
 import { formatPrice, formatDate, formatNumber } from "../lib/i18nUtils";
 import { CALENDAR_EVENTS } from "../constants";
 import { useAuth } from "../components/FirebaseProvider";
