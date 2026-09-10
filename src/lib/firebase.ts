@@ -20,3 +20,21 @@ export const fetchNotices = async () => {
 export const fetchExams = async () => {
     return [];
 };
+export const fetchNotices = async () => [];
+export const fetchExams = async () => [];
+export const fetchStudents = async () => [];
+export const fetchAdmins = async () => [];
+export const fetchRecordedClasses = async () => [];
+export const fetchAllUsers = async () => [];
+export const fetchAllExamResults = async () => [];
+export const updateAdmissionStatus = async () => {};
+export const fetchAdmissionStatus = async () => null;
+export const fetchCourses = async () => [];
+export const createCourse = async () => {};
+export const updateCourse = async () => {};
+export const updateInstitute = async () => {};
+export const deleteInstitute = async () => {};
+export const createExam = async () => {};
+export const submitExamResult = async () => {};
+export const createRecordedClass = async () => {};
+export const deleteRecordedClass = async () => {};
