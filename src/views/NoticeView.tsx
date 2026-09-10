@@ -6,7 +6,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Calendar as CalendarIcon, Bell, Megaphone, Info } from 'lucide-react';
-import { fetchNotices } from '../api';
+
 import { Notice } from '../types';
 import { formatDate } from '../lib/i18nUtils';
 
