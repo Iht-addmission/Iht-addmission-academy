@@ -41,3 +41,4 @@ export const deleteTeacher = async () => ({});
 export const fetchInstitutes = async () => [];
 export const addInstitute = async () => ({});
 export const fetchAbout = async () => null;
+export const fetchAbout = async () => ({ title: "", description: "" });
