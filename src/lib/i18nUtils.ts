@@ -22,7 +22,9 @@ export const formatPrice = (price: number | string) => {
     minimumFractionDigits: 0
   }).format(p).replace('BDT', '৳');
 };
-export const formatNumber = (num: number | string) => {
-  if (!num) return "0";
-  return Number(num).toLocaleString('en-US');
+// i18nUtils.ts বা আপনার ইউটিলিটি ফাইলের ভেতরে নিচের কোডটি যুক্ত করুন
+
+export const formatNumber = (num: number | string): string => {
+  if (num === undefined || num === null) return "0";
+  return Number(num).toLocaleString();
 };
