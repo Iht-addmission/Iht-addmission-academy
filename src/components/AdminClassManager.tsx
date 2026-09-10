@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Plus, Video, Trash2, Edit2, CheckCircle, Clock, Calendar, Link as LinkIcon, User, Save, X } from 'lucide-react';
 import { ClassSession, subscribeToClasses, addClass, updateClassStatus, deleteClass } from '../lib/liveClassesService';
-import { formatDate } from '../lib/i18nUtils';
-import { createBroadcastNotification } from '../api';
+
+
 
 export const AdminClassManager: React.FC = () => {
   const [classes, setClasses] = useState<ClassSession[]>([]);
