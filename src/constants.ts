@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Course, Notice } from './types';
+import { Course, Notice } from '../types';
 
 export const COURSES: Course[] = [
   {
