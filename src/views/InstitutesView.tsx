@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Building2, MapPin, CheckCircle2, LayoutGrid, Users, ArrowRight, ShieldCheck, Microscope, Search, Filter, ChevronDown, ListFilter, Globe, GraduationCap, X, SlidersHorizontal, Trash2, Activity, Shield, Award } from 'lucide-react';
 
 import { Institute, Course, DepartmentInfo } from '../types';
-import { formatNumber } from '../lib/i18nUtils';
+
 import dhakaIhtImg from '../assets/images/regenerated_image_1777921032256.jpg';
 import rajshahiIhtImg from '../assets/images/regenerated_image_1777920175521.png';
 import boguraIhtImg from '../assets/images/regenerated_image_1777920177187.jpg';
