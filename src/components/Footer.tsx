@@ -21,7 +21,7 @@ import {
   GraduationCap,
   Target
 } from 'lucide-react';
-import { fetchAbout } from '../api';
+
 
 interface FooterProps {
   onNavigate: (page: string) => void;
