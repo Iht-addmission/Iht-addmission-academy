@@ -41,3 +41,6 @@ export const deleteTeacher = async () => ({});
 export const fetchInstitutes = async () => [];
 export const addInstitute = async () => ({});
 export const fetchAbout = async () => ({ title: "", description: "" });
+if (typeof window !== 'undefined') {
+  (window as any).fetchAbout = fetchAbout;
+}
