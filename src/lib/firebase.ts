@@ -14,12 +14,6 @@ export const db = initializeFirestore(app, {
 
 export const auth = getAuth(app);
 export const storage = getStorage(app);
-export const fetchNotices = async () => {
-  return [];
-};
-export const fetchExams = async () => {
-    return [];
-};
 export const fetchNotices = async () => [];
 export const fetchExams = async () => [];
 export const fetchStudents = async () => [];
