@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Calendar as CalendarIcon, MapPin, Phone, Mail, MessageSquare, Send, CheckCircle2, Info, LogOut, Loader2, Award, ShieldAlert, Sparkles, ArrowRight, User } from 'lucide-react';
 import { CALENDAR_EVENTS } from '../constants';
-import { formatDate } from '../lib/i18nUtils';
+
 
 export function CalendarView() {
   return (
