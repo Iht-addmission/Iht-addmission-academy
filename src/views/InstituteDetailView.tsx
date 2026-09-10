@@ -23,7 +23,7 @@ import {
   Maximize2
 } from 'lucide-react';
 import { Institute, Course, DepartmentInfo } from '../types';
-import { fetchCourses } from '../api';
+
 
 interface InstituteDetailViewProps {
   institute: Institute;
