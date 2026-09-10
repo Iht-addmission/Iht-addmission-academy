@@ -22,3 +22,7 @@ export const formatPrice = (price: number | string) => {
     minimumFractionDigits: 0
   }).format(p).replace('BDT', '৳');
 };
+export const formatNumber = (num: number | string) => {
+  if (!num) return "0";
+  return Number(num).toLocaleString('en-US');
+};
