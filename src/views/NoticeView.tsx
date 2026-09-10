@@ -8,7 +8,7 @@ import { motion } from 'motion/react';
 import { Calendar as CalendarIcon, Bell, Megaphone, Info } from 'lucide-react';
 
 import { Notice } from '../types';
-import { formatDate } from '../lib/i18nUtils';
+
 
 export default function NoticeView() {
   const [notices, setNotices] = useState<Notice[]>([]);
