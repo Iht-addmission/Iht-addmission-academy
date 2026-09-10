@@ -2,17 +2,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 import { getFirestore, initializeFirestore } from 'firebase/firestore';
-
-{
-  "projectId": "photoshearapps",
-  "appId": "1:578580786275:web:ca78dfe6909b9c26ee9c56",
-  "apiKey": "AIzaSyAzlkhxjsYGlXADFHmLu28Sg-PHfB4TTII",
-  "authDomain": "photoshearapps.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-3a8196da-519c-4741-978f-d06959841b66",
-  "storageBucket": "photoshearapps.firebasestorage.app",
-  "messagingSenderId": "578580786275",
-  "measurementId": ""
-}
+import firebaseConfig from '../../firebase-app-config.json';
 
 const app = initializeApp(firebaseConfig);
 
@@ -24,7 +14,6 @@ export const db = initializeFirestore(app, {
 export const auth = getAuth(app);
 export const storage = getStorage(app);
 
-// Complete master mock list for all dashboard and view functions
 export const fetchNotices = async () => [];
 export const fetchExams = async () => [];
 export const fetchStudents = async () => [];
