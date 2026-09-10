@@ -42,7 +42,7 @@ const INSTITUTE_TYPES = [
   { id: 'small', label: 'Small (<100)', min: 0, max: 100 },
 ];
 
-export function InstitutesView({ onNavigate, initialSearchQuery = '' }: InstitutesViewProps) {
+export default function InstitutesView({ onNavigate, initialSearchQuery = '' }: InstitutesViewProps) {
   const { t, i18n } = useTranslation();
   const [institutes, setInstitutes] = useState<Institute[]>([]);
   const [courses, setCourses] = useState<Course[]>([]);
