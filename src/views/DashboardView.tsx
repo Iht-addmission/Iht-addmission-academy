@@ -124,6 +124,8 @@ import { LiveClasses } from "../components/LiveClasses";
 import { AdminClassManager } from "../components/AdminClassManager";
 import PomodoroTimer from "../components/PomodoroTimer";
 
+// এর নিচে আপনার বাকি কোড ও ফাংশনগুলো থাকবে...
+
 const chartData = [
   { name: "Jan", students: 400 },
   { name: "Feb", students: 520 },
