@@ -5,9 +5,20 @@
 
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Calendar as CalendarIcon, MapPin, Phone, Mail, MessageSquare, Send, CheckCircle2, Info, LogOut, Loader2, Award, ShieldAlert, Sparkles, ArrowRight, User } from 'lucide-react';
+import { Calendar as CalendarIcon, MapPin, Phone, Mail, MessageSquare, Send, CheckCircle2, ShieldAlert, Sparkles, ArrowRight, User, LogOut, Loader2 } from 'lucide-react';
 import { CALENDAR_EVENTS } from '../constants';
 
+// ডেইট ফরম্যাট করার জন্য একটি হেল্পার ফাংশন (যদি আপনার কনস্টেসে না থাকে)
+const formatDate = (dateString: string, format: string) => {
+  const date = new Date(dateString);
+  if (format === 'MMM') {
+    return date.toLocaleString('en-US', { month: 'short' });
+  }
+  if (format === 'd') {
+    return date.getDate().toString();
+  }
+  return dateString;
+};
 
 export function CalendarView() {
   return (
@@ -73,7 +84,7 @@ export function CalendarView() {
         <div className="space-y-8">
            <div className="bg-slate-900 p-8 rounded-3xl text-white">
              <h3 className="font-bold mb-4">Export Calendar</h3>
-             <p className="text-slate-400 text-xs mb-6Leading-relaxed">Sync our academic schedule with your personal Google or Outlook calendar to never miss an important update.</p>
+             <p className="text-slate-400 text-xs mb-6 leading-relaxed">Sync our academic schedule with your personal Google or Outlook calendar to never miss an important update.</p>
              <button className="w-full bg-blue-600 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all flex items-center justify-center gap-2">
                Download .ICS <Send size={16} />
              </button>
@@ -362,47 +373,9 @@ export function LoginView({ onLogin }: { onLogin: (user: any) => void }) {
             onClick={() => setMode(mode === 'login' ? 'signup' : 'login')}
             className="text-[10px] font-black text-blue-600 uppercase tracking-widest hover:underline"
           >
-            {mode === 'login' ? 'Don\'t have an account? Sign Up' : 'Already have an account? Login'}
+            {mode === 'login' ? "Don't have an account? Sign Up" : "Already have an account? Login"}
           </button>
         </div>
-
-        {mode === 'login' && (
-          <div className="mt-12 pt-8 border-t border-slate-50 text-center">
-            <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest mb-6">Quick Access demo accounts</p>
-            <div className="grid grid-cols-3 gap-4">
-               <button 
-                onClick={() => {
-                  setEmail('student1@gmail.com');
-                  setPassword('password');
-                }}
-                className="p-4 bg-blue-50 rounded-2xl border border-blue-100 hover:bg-blue-100 transition-all group"
-               >
-                  <div className="text-[9px] font-black text-blue-600 uppercase mb-1">Student</div>
-                  <div className="text-[8px] font-bold text-blue-400 group-hover:text-blue-500 uppercase tracking-tighter">Login</div>
-               </button>
-               <button 
-                onClick={() => {
-                  setEmail('teacher1@gmail.com');
-                  setPassword('password');
-                }}
-                className="p-4 bg-indigo-50 rounded-2xl border border-indigo-100 hover:bg-indigo-100 transition-all group"
-               >
-                  <div className="text-[9px] font-black text-indigo-600 uppercase mb-1">Teacher</div>
-                  <div className="text-[8px] font-bold text-indigo-400 group-hover:text-indigo-500 uppercase tracking-tighter">Login</div>
-               </button>
-               <button 
-                onClick={() => {
-                  setEmail('xoysharif@gmail.com');
-                  setPassword('admin123');
-                }}
-                className="p-4 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-slate-100 transition-all group"
-               >
-                  <div className="text-[9px] font-black text-slate-900 uppercase mb-1">Owner Admin</div>
-                  <div className="text-[8px] font-bold text-slate-400 group-hover:text-slate-500 uppercase tracking-tighter">Existing</div>
-               </button>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
