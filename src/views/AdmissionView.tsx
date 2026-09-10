@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { CheckCircle2, ChevronRight, CreditCard, User, Phone, BookOpen, Loader2, Activity, ArrowRight, ShieldCheck, GraduationCap, Target } from 'lucide-react';
-import { submitAdmission, fetchCourses } from '../api';
+
 import { Course, User as UserType } from '../types';
 import { formatNumber, formatPrice } from '../lib/i18nUtils';
 
