@@ -1,0 +1,6 @@
+{
+  "name": "IHT Admission Academy",
+  "description": "Premium educational platform for IHT & MATS aspirants featuring live classes, secure student panels, and comprehensive admission resources.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": []
+}

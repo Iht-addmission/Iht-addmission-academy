@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IHT Admission Academy | National IHT Information Portal</title>
+    <script>
+      (function() {
+        var originalFetch = window.fetch;
+        try {
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return originalFetch; },
+            set: function(val) { 
+              // console.warn('Blocked attempt to override window.fetch'); 
+            }
+          });
+        } catch (e) {
+          // If it's already non-configurable, we can't do much here, 
+          // but usually window properties are configurable or at least allow defining a setter if not already present.
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
