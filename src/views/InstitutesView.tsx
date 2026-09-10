@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Building2, MapPin, CheckCircle2, LayoutGrid, Users, ArrowRight, ShieldCheck, Microscope, Search, Filter, ChevronDown, ListFilter, Globe, GraduationCap, X, SlidersHorizontal, Trash2, Activity, Shield, Award } from 'lucide-react';
-import { fetchInstitutes, fetchCourses } from '../api';
+
 import { Institute, Course, DepartmentInfo } from '../types';
 import { formatNumber } from '../lib/i18nUtils';
 import dhakaIhtImg from '../assets/images/regenerated_image_1777921032256.jpg';
