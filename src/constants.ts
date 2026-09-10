@@ -62,3 +62,8 @@ export const NOTICES: Notice[] = [
     isImportant: true
   }
 ];
+export const CALENDAR_EVENTS = [
+  { id: '1', title: 'Orientation Class', date: '2026-06-10', type: 'Live' },
+  { id: '2', title: 'Model Test Exam', date: '2026-06-15', type: 'Exam' },
+  { id: '3', title: 'Q&A Session', date: '2026-06-20', type: 'Meet' },
+];
