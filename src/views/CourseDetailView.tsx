@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { COURSES } from '../constants';
 import { useTranslation } from 'react-i18next';
-import { formatPrice } from '../lib/i18nUtils';
+
 
 interface CourseDetailViewProps {
   courseId: string;
